@@ -1,0 +1,35 @@
+{
+    "current": 2,
+    "backup": 1,
+    "version": "3.0.0-33-g5697e310",
+    "options": 
+{
+    "maxIterations": "1000",
+    "maxRuntime": "9223372036854775807",
+    "maxSharedMemory": "0",
+    "checkpointInterval": "500",
+    "findPrimalFeasible": "false",
+    "findDualFeasible": "false",
+    "detectPrimalFeasibleJump": "false",
+    "detectDualFeasibleJump": "false",
+    "precision": "1024",
+    "precision_actual": "1024",
+    "dualityGapThreshold": "1e-15",
+    "primalErrorThreshold": "1e-20",
+    "dualErrorThreshold": "1e-20",
+    "initialMatrixScalePrimal": "1e+20",
+    "initialMatrixScaleDual": "1e+20",
+    "feasibleCenteringParameter": "0.1",
+    "infeasibleCenteringParameter": "0.01",
+    "stepLengthReduction": "0.7",
+    "maxComplementarity": "1e+100",
+    "initialCheckpointDir": "\/usr\/local\/share\/sdpb\/sdp.zip.ck",
+    "checkpointDir": "\/usr\/local\/share\/sdpb\/sdp.zip.ck",
+    "sdpDir": "\/usr\/local\/share\/sdpb\/sdp.zip",
+    "outDir": "\/usr\/local\/share\/sdpb\/sdp.zip_out",
+    "noFinalCheckpoint": "false",
+    "writeSolution": "x,y",
+    "procGranularity": "1",
+    "verbosity": "1"
+}
+}
