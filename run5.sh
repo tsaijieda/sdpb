@@ -1,4 +1,4 @@
-list=(1.5 1.7 2.0 2.5 3 4 5 7 10 15 20 25 33 50)
+list=(1.0 1.1 1.2 1.3 1.4)
 spinlist=(0.0)
 dir=$(pwd)
 echo "$dir"
@@ -27,7 +27,7 @@ for ((i = 0; i < ${#list[@]}; i++))
 	
 	touch spin0/spin0_result_"$j".txt
         
-	python3 store_result.py out_out/out.txt spin0/spin2_allmass_"$j".txt
+	python3 store_result.py out_out/out.txt spin0/spin2_first_mass_"$j".txt
 
         #rm -rf upper_spectrum 
 
