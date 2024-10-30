@@ -1,5 +1,5 @@
-list=(15.0 20.0 25.0 33.0 50.0)
-spinlist=(1.0 0.1 0.25 0.5 2.0)
+list=(1.5 1.7 2.0 2.5 3 4 5 7 10 15 20 25 33 50)
+spinlist=(0.0)
 dir=$(pwd)
 echo "$dir"
 #rm -rf inter_result.txt
@@ -27,7 +27,7 @@ for ((i = 0; i < ${#list[@]}; i++))
 	
 	touch spin0/spin0_result_"$j".txt
         
-	python3 store_result.py out_out/out.txt spin0/bigmass_"$j".txt
+	python3 store_result.py out_out/out.txt spin0/spin2_allmass_"$j".txt
 
         #rm -rf upper_spectrum 
 
