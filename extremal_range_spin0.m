@@ -5,7 +5,7 @@
 <<"SDPB.m";
 
 mu = ToExpression[ReadList["range.txt"][[1]]]
-spin = 4;
+spin = 6;
 bound = ToExpression[ReadList["range.txt"][[2]]];
 a1 = ToExpression[ReadList["range.txt"][[3]]]
 Print[mu];
@@ -1081,10 +1081,6 @@ TSDP[datfile_] := Module[
     WritePmpJson[datfile, SDP[obj, norm, pols]]]
 
 TSDP["out.json"]
-
-
-
-
 
 
 
