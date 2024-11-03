@@ -1,4 +1,4 @@
 {
-  "num_blocks": 1007,
+  "num_blocks": 2507,
   "command": "pmp2sdp 1024 -i /data/out.json -o /data/out"
 }

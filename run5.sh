@@ -27,7 +27,7 @@ for ((i = 0; i < ${#list[@]}; i++))
 	
 	touch spin0/spin0_result_"$j".txt
         
-	python3 store_result.py out_out/out.txt spin0/spin6_a0.txt
+	python3 store_result.py out_out/out.txt spin0/spin4_smallmass.txt
 
         #rm -rf upper_spectrum 
 
