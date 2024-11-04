@@ -10,7 +10,7 @@ bound = ToExpression[ReadList["range.txt"][[2]]];
 a1 = ToExpression[ReadList["range.txt"][[3]]]
 Print[mu];
 Print[a1];
-n = 10;
+n = 6;
 
 
 h[k_,q_,x_,l_]:=FullSimplify[(mu+x)^10*(-1)^(q-1)*1/((k-q-1)!)*1/((q-1)!)(D[D[(1/(x-s+mu)+1/(x+s+t+mu))*1/((x+mu)(x+t+mu))*LegendreP[l,1+(2t)/(x+mu)],{t,q-1}]/.{t -> -s},{s,k-q-1}]/.{s -> 0})];
