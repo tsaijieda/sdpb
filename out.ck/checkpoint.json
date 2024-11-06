@@ -5,7 +5,7 @@
     "options": 
 {
     "maxIterations": "5000",
-    "maxRuntime": "9223372036854775801",
+    "maxRuntime": "9223372036854775804",
     "maxSharedMemory": "0",
     "checkpointInterval": "3600",
     "findPrimalFeasible": "false",
