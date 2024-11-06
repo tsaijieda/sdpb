@@ -10,7 +10,7 @@ bound = ToExpression[ReadList["range.txt"][[2]]];
 a1 = ToExpression[ReadList["range.txt"][[3]]]
 Print[mu];
 Print[a1];
-n = 6;
+n = 10;
 
 
 h[k_,q_,x_,l_]:=FullSimplify[(mu+x)^10*(-1)^(q-1)*1/((k-q-1)!)*1/((q-1)!)(D[D[(1/(x-s+mu)+1/(x+s+t+mu))*1/((x+mu)(x+t+mu))*LegendreP[l,1+(2t)/(x+mu)],{t,q-1}]/.{t -> -s},{s,k-q-1}]/.{s -> 0})];
@@ -316,7 +316,7 @@ TSDP[datfile_] := Module[
         Polyp[494,x],
         Polyp[496,x],
         Polyp[498,x],
-        Polyp[500,x],
+        Polyp[500,x](*,
         Polyp[502,x],
         Polyp[504,x],
         Polyp[506,x],
@@ -2570,7 +2570,7 @@ TSDP[datfile_] := Module[
         Polyp[10000,x],
         Polyp[15000,x],
         Polyp[20000,x],
-        Polyp[40000,x]  
+        Polyp[40000,x]*)  
         },
 		norm = Flatten[{bound, Table[0, {i, 1, n - 1}]}],
 		obj = Flatten[{{0, -1}, Table[0, {i, 1, n - 2}]}]
