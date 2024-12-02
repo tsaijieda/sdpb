@@ -5,7 +5,7 @@
 <<"SDPB.m";
 
 mu = ToExpression[ReadList["range.txt"][[1]]]
-spin = 4;
+spin = 2;
 bound = ToExpression[ReadList["range.txt"][[2]]];
 a1 = ToExpression[ReadList["range.txt"][[3]]]
 Print[mu];
@@ -90,7 +90,7 @@ TSDP[datfile_] := Module[
         Polyp[44,x],
         Polyp[46,x],
         Polyp[48,x],
-        Polyp[50,x](*,
+        Polyp[50,x],
         Polyp[52,x],
         Polyp[54,x],
         Polyp[56,x],
@@ -316,7 +316,7 @@ TSDP[datfile_] := Module[
         Polyp[494,x],
         Polyp[496,x],
         Polyp[498,x],
-        Polyp[500,x]*)(*,
+        Polyp[500,x](*,
         Polyp[502,x],
         Polyp[504,x],
         Polyp[506,x],
@@ -566,7 +566,7 @@ TSDP[datfile_] := Module[
         Polyp[994,x],
         Polyp[996,x],
         Polyp[998,x],
-        Polyp[1000,x],
+        Polyp[1000,x]*)(*,
         Polyp[1002,x],
         Polyp[1004,x],
         Polyp[1006,x],
