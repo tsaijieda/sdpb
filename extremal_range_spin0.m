@@ -66,7 +66,8 @@ TSDP[datfile_] := Module[
     {
        pols = Flatten[{
        {Polyp2[spin, x, 1.0/mu - mu]},
-        Table[Polyp[J, x, x + 1.0 - mu],{J, 0, 5000, 2}]
+        Table[Polyp[J, x, x + 1.0 - mu],{J, 0, total, 2}],
+        Table[Polyp[total*2^(i), x, x + 1.0 - mu],{i, 0, 10, 1}]
         }],
 		norm = Flatten[{bound, Table[0, {i, 1, n - 1}]}],
 		obj = Flatten[{{0, -1}, Table[0, {i, 1, n - 2}]}]
